@@ -16,14 +16,15 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="hero__text">
-                                <span>For website and video editing</span>
-                                <h2>Videographer’s Portfolio</h2>
-                                <a href="#" class="primary-btn">See more about us</a>
+                                <span>Videograf evenimente - Constanta</span>
+                                <h2>Razvan Mirica</h2>
+                                <a href="#" class="primary-btn">Portofoliul meu</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!--
             <div class="hero__item set-bg" data-setbg="{% static 'general_site_pages/img/hero/hero-1.png' %}">
                 <div class="container">
                     <div class="row">
@@ -49,7 +50,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
     <!-- Hero Section End -->
@@ -61,12 +62,11 @@
                 <div class="col-lg-4">
                     <div class="services__title">
                         <div class="section-title">
-                            <span>Our services</span>
-                            <h2>What We do?</h2>
+                            <span>Serviciile mele</span>
+                            <h2>Ce va ofer?</h2>
                         </div>
-                        <p>If you hire a videographer of our team you will get a video professional to make a custom
-                            video for your business and, once the project is over.</p>
-                        <a href="#" class="primary-btn">View all services</a>
+                        <p>Ofer servicii de videografie de cea mai inalta calitate, garantand excelenta in fiecare cadru.</p>
+                        <a href="{% url 'evenimente-nunta-botez-constanta' %}" class="primary-btn">Vezi serviciile mele</a>
                     </div>
                 </div>
                 <div class="col-lg-8">
@@ -74,41 +74,44 @@
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="services__item">
                                 <div class="services__item__icon">
-                                    <img src="img/icons/si-1.png" alt="">
+                                    <img src="{% static 'general_site_pages/img/icons/si-1.png' %}" alt="">
                                 </div>
-                                <h4>Motion graphics</h4>
-                                <p>Whether you’re halfway through the editing process, or you haven’t even started, our
-                                    post production services can put the finishing touches.</p>
+                                <h4>Nunta - eveniment unic</h4>
+                                <p>Nunta este un eveniment unic, o celebrare a iubirii care merita sa ramana vie in amintire. 
+                                    Este o explozie de emotii care nu vor trece niciodata, 
+                                    momente pretioase care merita sa fie pastrate pentru totdeauna.</p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="services__item">
                                 <div class="services__item__icon">
-                                    <img src="img/icons/si-2.png" alt="">
+                                    <img src="{% static 'general_site_pages/img/icons/si-2.png' %}" alt="">
                                 </div>
-                                <h4>Scriptwriting and editing</h4>
-                                <p>Whether you’re halfway through the editing process, or you haven’t even started, our
-                                    post production services can put the finishing touches.</p>
+                                <h4>Alte evenimente</h4>
+                                <p>Fiecare eveniment este o poveste care merita sa fie spusa cu emotie si autenticitate. Stim cum sa surprindem cele mai frumoase momente, 
+                                    transformandu-le in amintiri de neuitat. Orice eveniment, indiferent de ocazie, 
+                                    va ramane unic si special, reflectand perfectiunea fiecarei clipe.</p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="services__item">
                                 <div class="services__item__icon">
-                                    <img src="img/icons/si-3.png" alt="">
+                                    <img src="{% static 'general_site_pages/img/icons/si-3.png' %}" alt="">
                                 </div>
-                                <h4>Video distribution</h4>
-                                <p>Whether you’re halfway through the editing process, or you haven’t even started, our
-                                    post production services can put the finishing touches.</p>
+                                <h4>Botez - o amintire necesara</h4>
+                                <p>Botezul este un eveniment foarte important, un moment sacru care merita sa ramana intiparit intr-un video. 
+                                    Acestea sunt emotiile adevarate, care vor dainui in timp si vor fi retraiate de fiecare data cand revii la aceste imagini.</p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="services__item">
                                 <div class="services__item__icon">
-                                    <img src="img/icons/si-4.png" alt="">
+                                    <img src="{% static 'general_site_pages/img/icons/si-4.png' %}" alt="">
                                 </div>
-                                <h4>Video hosting</h4>
-                                <p>Whether you’re halfway through the editing process, or you haven’t even started, our
-                                    post production services can put the finishing touches.</p>
+                                <h4>Videoclipuri de prezentare</h4>
+                                <p>Videoclipurile de prezentare sunt esentiale pentru imaginea brandului. 
+                                    Am multe idei pentru a va scoate afacerea in lumina,
+                                    aducand in prim-plan valorile si povestea care va definesc.</p>
                             </div>
                         </div>
                     </div>
@@ -122,52 +125,52 @@
     <section class="work">
         <div class="work__gallery">
             <div class="grid-sizer"></div>
-            <div class="work__item wide__item set-bg" data-setbg="img/work/work-1.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+            <div class="work__item wide__item set-bg" data-setbg="{% static 'general_site_pages/img/work/nunta-Constanta-Alex-si-Laly.jpg' %}">
+                <a href="https://www.youtube.com/watch?v=zz0KYjwoh8s" class="play-btn video-popup"><i
                         class="fa fa-play"></i></a>
                 <div class="work__item__hover">
-                    <h4>VIP Auto Tires & Service</h4>
+                    <h4>Video Nunta Alex & Laly</h4>
                     <ul>
-                        <li>eCommerce</li>
-                        <li>Magento</li>
+                        <li>Constanta</li>
+                        <li>Constanta</li>
                     </ul>
                 </div>
             </div>
-            <div class="work__item small__item set-bg" data-setbg="img/work/work-2.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+            <div class="work__item small__item set-bg" data-setbg="{% static 'general_site_pages/img/work/botez-Constanta-Vladimir-Andrei.jpg' %}">
+                <a href="https://www.youtube.com/watch?v=JaRtdL3ck6k" class="play-btn video-popup"><i
                         class="fa fa-play"></i></a>
             </div>
-            <div class="work__item small__item set-bg" data-setbg="img/work/work-3.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+            <div class="work__item small__item set-bg" data-setbg="{% static 'general_site_pages/img/work/botez-Constanta-Rares-Stefan.jpg' %}">
+                <a href="https://www.youtube.com/watch?v=K0Tg2uIKf7c" class="play-btn video-popup"><i
                         class="fa fa-play"></i></a>
             </div>
-            <div class="work__item large__item set-bg" data-setbg="img/work/work-4.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+            <div class="work__item large__item set-bg" data-setbg="{% static 'general_site_pages/img/work/Video-Nunta-Alin-Amalia-Constanta.jpg' %}">
+                <a href="https://www.youtube.com/watch?v=mfKZR0P7tss" class="play-btn video-popup"><i
                         class="fa fa-play"></i></a>
                 <div class="work__item__hover">
-                    <h4>VIP Auto Tires & Service</h4>
+                    <h4>Video Nunta Alin & Amalia Constanta</h4>
                     <ul>
-                        <li>eCommerce</li>
-                        <li>Magento</li>
+                        <li>Constanta</li>
+                        <li>Constanta</li>
                     </ul>
                 </div>
             </div>
-            <div class="work__item small__item set-bg" data-setbg="img/work/work-5.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+            <div class="work__item small__item set-bg" data-setbg="{% static 'general_site_pages/img/work/Clip-Botez-Evelina-Mihaela-video-constanta.jpg' %}">
+                <a href="https://www.youtube.com/watch?v=FvIsK8s1lSM" class="play-btn video-popup"><i
                         class="fa fa-play"></i></a>
             </div>
-            <div class="work__item small__item set-bg" data-setbg="img/work/work-6.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+            <div class="work__item small__item set-bg" data-setbg="{% static 'general_site_pages/img/work/Botez-si-Cununie-Razvan-video-Constanta.jpg' %}">
+                <a href="https://www.youtube.com/watch?v=W3vl7cofPnk" class="play-btn video-popup"><i
                         class="fa fa-play"></i></a>
             </div>
-            <div class="work__item wide__item set-bg" data-setbg="img/work/work-7.jpg">
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+            <div class="work__item wide__item set-bg" data-setbg="{% static 'general_site_pages/img/work/Clip-Nunta-Georgiana-si-Ciprian.jpg' %}">
+                <a href="https://www.youtube.com/watch?v=NjI95M8Umn0" class="play-btn video-popup"><i
                         class="fa fa-play"></i></a>
                 <div class="work__item__hover">
-                    <h4>VIP Auto Tires & Service</h4>
+                    <h4>Clip Nunta Georgiana & Ciprian</h4>
                     <ul>
-                        <li>eCommerce</li>
-                        <li>Magento</li>
+                        <li>Constanta</li>
+                        <li>Constanta</li>
                     </ul>
                 </div>
             </div>
@@ -183,7 +186,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="counter__item">
                             <div class="counter__item__text">
-                                <img src="img/icons/ci-1.png" alt="">
+                                <img src="{% static 'general_site_pages/img/icons/ci-1.png' %}" alt="">
                                 <h2 class="counter_num">230</h2>
                                 <p>Compled Projects</p>
                             </div>
@@ -192,7 +195,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="counter__item second__item">
                             <div class="counter__item__text">
-                                <img src="img/icons/ci-2.png" alt="">
+                                <img src="{% static 'general_site_pages/img/icons/ci-2.png' %}" alt="">
                                 <h2 class="counter_num">1068</h2>
                                 <p>Happy clients</p>
                             </div>
@@ -201,7 +204,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="counter__item third__item">
                             <div class="counter__item__text">
-                                <img src="img/icons/ci-3.png" alt="">
+                                <img src="{% static 'general_site_pages/img/icons/ci-3.png' %}" alt="">
                                 <h2 class="counter_num">230</h2>
                                 <p>Perspective clients</p>
                             </div>
@@ -210,7 +213,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="counter__item four__item">
                             <div class="counter__item__text">
-                                <img src="img/icons/ci-4.png" alt="">
+                                <img src="{% static 'general_site_pages/img/icons/ci-4.png' %}" alt="">
                                 <h2 class="counter_num">230</h2>
                                 <p>Compled Projects</p>
                             </div>
@@ -223,7 +226,7 @@
     <!-- Counter Section End -->
 
     <!-- Team Section Begin -->
-    <section class="team spad set-bg" data-setbg="img/team-bg.jpg">
+    <!-- <section class="team spad set-bg" data-setbg="{% static 'general_site_pages/img/team-bg.jpg' %}">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -235,7 +238,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                    <div class="team__item set-bg" data-setbg="img/team/team-1.jpg">
+                    <div class="team__item set-bg" data-setbg="{% static 'general_site_pages/img/team/team-1.jpg' %}">
                         <div class="team__item__text">
                             <h4>AMANDA STONE</h4>
                             <p>Videographer</p>
@@ -249,7 +252,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                    <div class="team__item team__item--second set-bg" data-setbg="img/team/team-2.jpg">
+                    <div class="team__item team__item--second set-bg" data-setbg="{% static 'general_site_pages/img/team/team-2.jpg' %}">
                         <div class="team__item__text">
                             <h4>AMANDA STONE</h4>
                             <p>Videographer</p>
@@ -263,7 +266,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                    <div class="team__item team__item--third set-bg" data-setbg="img/team/team-3.jpg">
+                    <div class="team__item team__item--third set-bg" data-setbg="{% static 'general_site_pages/img/team/team-3.jpg' %}">
                         <div class="team__item__text">
                             <h4>AMANDA STONE</h4>
                             <p>Videographer</p>
@@ -297,114 +300,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Team Section End -->
 
-    <!-- Latest Blog Section Begin -->
-    <section class="latest spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title center-title">
-                        <span>Our Blog</span>
-                        <h2>Blog Update</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="latest__slider owl-carousel">
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>What Makes Users Want to Share a Video on Social Media?</h4>
-                            <ul>
-                                <li>Jan 03, 2020</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>We recently launched a new website for a Vital client and wanted to share some of the
-                                cool features we were able...</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>Bumper Ads: How to Tell a Story in 6 Seconds</h4>
-                            <ul>
-                                <li>Jan 03, 2020</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>We recently launched a new website for a Vital client and wanted to share some of the
-                                cool features we were able...</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>What Makes Users Want to Share a Video on Social Media?</h4>
-                            <ul>
-                                <li>Jan 03, 2020</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>We recently launched a new website for a Vital client and wanted to share some of the
-                                cool features we were able...</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>Bumper Ads: How to Tell a Story in 6 Seconds</h4>
-                            <ul>
-                                <li>Jan 03, 2020</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>We recently launched a new website for a Vital client and wanted to share some of the
-                                cool features we were able...</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>What Makes Users Want to Share a Video on Social Media?</h4>
-                            <ul>
-                                <li>Jan 03, 2020</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>We recently launched a new website for a Vital client and wanted to share some of the
-                                cool features we were able...</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>What Makes Users Want to Share a Video on Social Media?</h4>
-                            <ul>
-                                <li>Jan 03, 2020</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>We recently launched a new website for a Vital client and wanted to share some of the
-                                cool features we were able...</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>What Makes Users Want to Share a Video on Social Media?</h4>
-                            <ul>
-                                <li>Jan 03, 2020</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>We recently launched a new website for a Vital client and wanted to share some of the
-                                cool features we were able...</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Latest Blog Section End -->
-
     <!-- Call To Action Section Begin -->
-    <section class="callto spad set-bg" data-setbg="img/callto-bg.jpg">
+    <section class="callto spad set-bg" data-setbg="{% static 'general_site_pages/img/callto-bg.jpg' %}">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
