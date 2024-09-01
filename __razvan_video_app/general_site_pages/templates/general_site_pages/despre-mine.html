@@ -17,7 +17,7 @@
                     <div class="breadcrumb__text">
                         <h2>Despre mine</h2>
                         <div class="breadcrumb__links">
-                            <a href="#">Home</a>
+                            <a href="{% url 'home' %}">Home</a>
                             <span>Despre mine</span>
                         </div>
                     </div>
@@ -36,15 +36,15 @@
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="about__pic__item about__pic__item--large set-bg"
-                                    data-setbg="img/about/about-1.jpg"></div>
+                                    data-setbg="{% static 'general_site_pages/img/about/despre-mine-Razvan-Mirica.png' %}"></div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <div class="about__pic__item set-bg" data-setbg="img/about/about-2.jpg"></div>
+                                        <div class="about__pic__item set-bg" data-setbg="{% static 'general_site_pages/img/about/about-2.jpg' %}"></div>
                                     </div>
                                     <div class="col-lg-12">
-                                        <div class="about__pic__item set-bg" data-setbg="img/about/about-3.jpg"></div>
+                                        <div class="about__pic__item set-bg" data-setbg="{% static 'general_site_pages/img/about/about-3.jpg' %}"></div>
                                     </div>
                                 </div>
                             </div>
@@ -61,7 +61,7 @@
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="services__item">
                                     <div class="services__item__icon">
-                                        <img src="img/icons/si-3.png" alt="">
+                                        <img src="{% static 'general_site_pages/img/icons/si-3.png' %}" alt="">
                                     </div>
                                     <h4>Video distribution</h4>
                                     <p>Whether you’re halfway through the editing process, or you.</p>
@@ -70,7 +70,7 @@
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="services__item">
                                     <div class="services__item__icon">
-                                        <img src="img/icons/si-4.png" alt="">
+                                        <img src="{% static 'general_site_pages/img/icons/si-4.png' %}" alt="">
                                     </div>
                                     <h4>Video hosting</h4>
                                     <p>Whether you’re halfway through the editing process, or you.</p>
@@ -89,44 +89,132 @@
     </section>
     <!-- About Section End -->
 
-    <!-- Counter Section Begin -->
-    <section class="counter">
+    <!-- Testimonial Section Begin -->
+    <section class="testimonial spad set-bg" data-setbg="{% static 'general_site_pages/img/testimonial-bg.jpg' %}">
         <div class="container">
-            <div class="counter__content">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-1.png" alt="">
-                                <h2 class="counter_num">230</h2>
-                                <p>Compled Projects</p>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title center-title">
+                        <span>Clientii mei</span>
+                        <h2>Ce spun oamenii despre mine?</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="testimonial__slider owl-carousel">
+                    <div class="col-lg-4">
+                        <div class="testimonial__item">
+                            <div class="testimonial__text">
+                                <p>Am avut nunta pe data de 6 iulie 2024 , pe Razvan si George i am gasit prin intermediul unui prieten, ne au placut cum lucreaza asa ca am colaborat, nu ne a părut rau , totul a fost superb, poze , filmari pe masura dar si o comunicare frumoasa , se vede clar ca le place ceea ce fac , pe langa faptul ca iti ofera niste amintiri frumoase si de calitate , și pretul lor este unul super ok din punctul meu de vedere , este pentru buzunarul oricui zic eu in ziua de azi 🤗
+                                    Multumim inca o data 🤗</p>
+                            </div>
+                            <div class="testimonial__author">
+                                <div class="testimonial__author__pic">
+                                    <img src="{% static 'general_site_pages/img/testimonial/Alex-Biea-recenzie-google.png' %}" alt="">
+                                </div>
+                                <div class="testimonial__author__text">
+                                    <h5>Alex Biea</h5>
+                                    <span>Client</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item second__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-2.png" alt="">
-                                <h2 class="counter_num">1068</h2>
-                                <p>Happy clients</p>
+                    <div class="col-lg-4">
+                        <div class="testimonial__item">
+                            <div class="testimonial__text">
+                                <p>Cel mai bun cameraman și cel mai bun fotograf mulțumim din suflet pentru tot sunteți minunați !! Alături de voi am avut o nunta de poveste !! 😊😘.</p>
+                            </div>
+                            <div class="testimonial__author">
+                                <div class="testimonial__author__pic">
+                                    <img src="{% static 'general_site_pages/img/testimonial/Mihaela-Patriche-recenzie-google.png' %}" alt="">
+                                </div>
+                                <div class="testimonial__author__text">
+                                    <h5>Mihaela Patriche</h5>
+                                    <span>Clienta</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item third__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-3.png" alt="">
-                                <h2 class="counter_num">230</h2>
-                                <p>Perspective clients</p>
+                    <div class="col-lg-4">
+                        <div class="testimonial__item">
+                            <div class="testimonial__text">
+                                <p>In primul rand ținem să îți mulțumim din suflet pentru creativitate și pasiunea  pe care o ai asupra muncii tale . 😘
+                                    Suntem foarte fericiți și împliniți ,in calitate de părinții,a fiului nostru Fabian-Andrei  ,că te-am întâlnit și că ai reușit să faci ca botezul micuțului să iasă o poveste minunata  de neuitat  pt noi toții.💙
+                                    Recomand din tot sufletul și cu toată încrederea la toata lumea pe Răzvan video Constanta ....un om de milioane 🤗</p>
+                            </div>
+                            <div class="testimonial__author">
+                                <div class="testimonial__author__pic">
+                                    <img src="{% static 'general_site_pages/img/testimonial/Gabriela-Giuvelic-recenzie-google.png' %}" alt="">
+                                </div>
+                                <div class="testimonial__author__text">
+                                    <h5>Gabriela Giuvelic</h5>
+                                    <span>Clienta</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item four__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-4.png" alt="">
-                                <h2 class="counter_num">230</h2>
-                                <p>Compled Projects</p>
+                    <div class="col-lg-4">
+                        <div class="testimonial__item">
+                            <div class="testimonial__text">
+                                <p>Mi-a placut foarte mult clipul pe care mi l-a facut la cununie. Imi place dedicarea lui Razvan Mirica.
+                                    Il recomand pentru videoclipuri, daca vreti ceva unic si mirific.</p>
+                            </div>
+                            <div class="testimonial__author">
+                                <div class="testimonial__author__pic">
+                                    <img src="{% static 'general_site_pages/img/testimonial/Andrei-Cojocaru-recenzie-google.png' %}" alt="">
+                                </div>
+                                <div class="testimonial__author__text">
+                                    <h5>Andrei Cojocaru</h5>
+                                    <span>Client</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="testimonial__item">
+                            <div class="testimonial__text">
+                                <p>Totul la superlativ, echipament profesional, seriozitate si implicare maxima, talent nemarginit! Recomand cu incredere! Mulțumim! 🙏🏼 …</p>
+                            </div>
+                            <div class="testimonial__author">
+                                <div class="testimonial__author__pic">
+                                    <img src="{% static 'general_site_pages/img/testimonial/Viorel-Iacob-recenzie-google.png' %}" alt="">
+                                </div>
+                                <div class="testimonial__author__text">
+                                    <h5>Viorel Iacob</h5>
+                                    <span>Client</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="testimonial__item">
+                            <div class="testimonial__text">
+                                <p>Multumim mult pentru serviciile oferite. Videoclipul de la nunta si de la botezul baietelului nostru au iesit minunat. ❤️</p>
+                            </div>
+                            <div class="testimonial__author">
+                                <div class="testimonial__author__pic">
+                                    <img src="{% static 'general_site_pages/img/testimonial/Cristina-Matees-recenzie-google.png' %}" alt="">
+                                </div>
+                                <div class="testimonial__author__text">
+                                    <h5>Cristina Matees</h5>
+                                    <span>Clienta</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="testimonial__item">
+                            <div class="testimonial__text">
+                                <p>Seriozitatea și profesionalismul îl recomandă in primul rând.🔝 Dacă vă doriți o filmare pe care să o urmăriți cu drag de la evenimentele voastre, este alegerea potrivită. 👍🏻 …</p>
+                            </div>
+                            <div class="testimonial__author">
+                                <div class="testimonial__author__pic">
+                                    <img src="{% static 'general_site_pages/img/testimonial/George-Popa-recenzie-google.png' %}" alt="">
+                                </div>
+                                <div class="testimonial__author__text">
+                                    <h5>George Popa</h5>
+                                    <span>Coleg Fotograf</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -134,7 +222,7 @@
             </div>
         </div>
     </section>
-    <!-- Counter Section End -->
+    <!-- Testimonial Section End -->
 
     <!-- Team Section Begin -->
     <!-- <section class="team spad set-bg" data-setbg="img/team-bg.jpg">
