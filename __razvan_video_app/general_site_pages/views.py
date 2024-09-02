@@ -12,7 +12,7 @@ class HomePageView(TemplateView):
 
 
 class ToateVideoclipurilePageView(TemplateView):
-    template_name = 'general_site_pages/evenimente-nunta-botez-constanta.html'
+    template_name = 'general_site_pages/evenimente-constanta-nunta-botez-majorat-si-altele.html'
 
 
 # class PortofoliuNuntaPageView(TemplateView):
