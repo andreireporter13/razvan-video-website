@@ -26,10 +26,8 @@ SECRET_KEY = 'django-insecure-$fd!-hx4pnkghmi#2c9*x1d8eg26&u#b@@_a8cwz(7$eaj+#pk
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'localhost',
-    '127.0.0.1',
     '81.180.202.188',
-    'razvanvideo.ro']
+    'razvanvideo.ro',]
 
 
 # Application definition
